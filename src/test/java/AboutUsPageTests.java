@@ -28,7 +28,7 @@ public class AboutUsPageTests {
     public void openingAboutUsPageTest() {
         AboutUsPage.openAboutUsPage();
 
-        assertEquals(Consts.aboutUsPageUrl, WebDriver.driver.getCurrentUrl());
+        assertEquals(Consts.ABOUTUSPAGEURL, WebDriver.driver.getCurrentUrl());
     }
 
     @Test

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 public class AboutUsPage {
 
     public static void openAboutUsPage() {
-        BasePage.openLink(Consts.mainPageUrl, WebDriver.driver);
+        BasePage.openLink(Consts.MAINPAGEURL, WebDriver.driver);
         WebElement aboutUs = WebDriver.driver.findElement(By.id("2"));
         aboutUs.click();
 

@@ -42,7 +42,7 @@ public class JobsPageTests {
     public void openingJobsPageTest() {
         JobsPage.openJobsPage();
 
-        assertEquals(Consts.jobsPageUrl, WebDriver.driver.getCurrentUrl());
+        assertEquals(Consts.JOBSPAGEURL, WebDriver.driver.getCurrentUrl());
     }
 
     @ParameterizedTest

@@ -25,13 +25,13 @@ public class HomePageTests {
 
     @Test
     public void openingMainPageTest() {
-        BasePage.openLink(Consts.mainPageUrl, WebDriver.driver);
+        BasePage.openLink(Consts.MAINPAGEURL, WebDriver.driver);
         assertEquals(0, BasePage.createLog());
     }
 
     @Test
     public void logoTest() {
-        BasePage.openLink(Consts.mainPageUrl, WebDriver.driver);
+        BasePage.openLink(Consts.MAINPAGEURL, WebDriver.driver);
 
         WebElement logo = WebDriver.driver.findElement(By.xpath(logoXpath));
 
@@ -40,7 +40,7 @@ public class HomePageTests {
 
     @Test
     public void comingSoonImageTest() {
-        BasePage.openLink(Consts.mainPageUrl, WebDriver.driver);
+        BasePage.openLink(Consts.MAINPAGEURL, WebDriver.driver);
 
         WebElement comingSoonImage = WebDriver.driver.findElement(By.xpath(comingSoonImageXpath));
 

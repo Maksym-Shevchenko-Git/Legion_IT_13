@@ -10,7 +10,7 @@ public class JobsPage {
     public static final String errorMessageText = "No results found!" + "\n" + "Please try different search criteria";
 
     public static void openJobsPage() {
-        BasePage.openLink(Consts.mainPageUrl, WebDriver.driver);
+        BasePage.openLink(Consts.MAINPAGEURL, WebDriver.driver);
         WebElement jobsPage = WebDriver.driver.findElement(By.id("3"));
         jobsPage.click();
 
